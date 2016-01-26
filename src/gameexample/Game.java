@@ -4,7 +4,6 @@ package gameexample;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
@@ -15,36 +14,18 @@ import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
-import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Toolkit;
-import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
 
-import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
-import javax.swing.JWindow;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.Timer;
 
-import javax.sound.sampled.*;
-import java.net.URL;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 import sun.audio.AudioPlayer;
 
 /**
  *
- * @author ${user}
+ * @author fitws6356
  */
 public class Game extends JComponent implements KeyListener, MouseMotionListener, MouseListener {
 
@@ -279,7 +260,7 @@ public class Game extends JComponent implements KeyListener, MouseMotionListener
             blocks.add(new Rectangle(3700, 400, 120, 55));
             blocks.add(new Rectangle(4000, 200, 120, 55));
             blocks.add(new Rectangle(4050, 560, 500, 200));
-            blocks.add(new Rectangle(4100, 560, 200, 500));
+            blocks.add(new Rectangle(4100, 560, 240, 500));
 
         }
         // the main game loop section
@@ -439,7 +420,7 @@ public class Game extends JComponent implements KeyListener, MouseMotionListener
     }
 
     @Override
-    public void keyTyped(KeyEvent e) {
+    public void keyTyped(KeyEvent e) { 
     }
 
     @Override
